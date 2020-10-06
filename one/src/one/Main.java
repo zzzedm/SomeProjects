@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		for(int i=0;i<10;++i) {
-			System.out.println(i);
-			if(i==3) {
-				i+=1;
-				continue;
-			}
-		}
+		List<Integer> a = new ArrayList<Integer>(5);
+		a.add(3);
+		a.add(5);
+		a.add(2);
 		
+		for(int i = 0;i<3;++i) {
+			System.out.println(a.get(i));
+		}
 	}
 }
