@@ -1,20 +1,19 @@
 package one;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		List<Integer> a = new ArrayList<Integer>(5);
-		a.add(3);
-		a.add(5);
-		a.add(2);
+		int[][] a = {
+				{2,1,5,3,2},
+				{2,4,5,1,2},
+				{1,7,4,8,3,4,7,6,8}
+		};
 		
-		for(int i = 0;i<3;++i) {
-			System.out.println(a.get(i));
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
 		}
 	}
 }
